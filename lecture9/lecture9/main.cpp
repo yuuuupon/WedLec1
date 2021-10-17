@@ -180,7 +180,16 @@ public:
 
     void Set(int num)
     {
-        Array1[num] = num;
+        if (0 <= num && num < Array1Size)
+        {
+            Array1[num] = num;
+        }
+
+        else
+        {
+            printf("banana");
+            return 0;
+        }
     };
 
     int Get(int num)
