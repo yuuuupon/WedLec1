@@ -178,17 +178,16 @@ public:
         Array1 = nullptr;
     };
 
-    void Set(int num)
+    void Set(int num,int numnum)
     {
         if (0 <= num && num < Array1Size)
         {
-            Array1[num] = num;
+            Array1[num] = numnum;
         }
 
         else
         {
             printf("banana");
-            return 0;
         }
     };
 
