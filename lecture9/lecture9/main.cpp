@@ -163,6 +163,7 @@ newとdeleteで配列を確保する処理を、
 
 class Array
 {
+//1しか出てこない
 public:
     int num;
     void Create(int num)
@@ -184,7 +185,7 @@ public:
 
     int Get(int num)
     {
-        if (0 <= num && num < Array1size)
+        if (0 <= num && num < Array1Size)
         {
             return Array1[num];
         }
@@ -195,10 +196,10 @@ public:
             return 0;
         }
     }
-
 private:
+    //int Array1;
+    int* Array1 = nullptr;
     int Array1Size;
-    int* Array1Size = nullptr;
 };
 
 int main()
