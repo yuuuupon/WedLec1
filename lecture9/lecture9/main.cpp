@@ -218,8 +218,8 @@ int main()
 
     for (int i = 0; i < 1000; i++)
     {
-        array.Set(1);
-        printf("num = %d\n", array.Get(1));
+        array.Set(i,i+3);
+        printf("num = %d\n", array.Get(i));
     }
 
     //配列外を参照しようとした際の確認
